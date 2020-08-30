@@ -28,6 +28,8 @@ public class Device {
                 this.hasBattery = hasBattery;
                 this.hasMemory = hasMemory;
                 this.screenSize = screenSize;
+
+
         }
 
         public String toString(){
@@ -41,6 +43,7 @@ public class Device {
                         "\nDoes it have memory? "+hasMemory+
                         "================================";
         }
+
 
 
 }
