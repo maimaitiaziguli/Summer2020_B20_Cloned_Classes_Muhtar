@@ -11,17 +11,33 @@ public class Person {
     public int age;
     public char gender;
 
+    private long ssn; // we dont want this to be inherited to the sub classes
 
-    private void eat(){
+    public long getSsn(){
+        return ssn;
+    }// read ssn only
+
+    public void setSsn(long ssn){
+        this.ssn = ssn;
+    }// set ssn only
+
+
+    private void eat(){ // we dont want this to be inherited to the sub classes
         System.out.println(name +" is eating");
     }
 
-    private void walk(){
+    private void walk(){// we dont want this to be inherited to the sub classes
         System.out.println(name +" is walking");
     }
 
-    private void sleep(){
+    public void sleep(){
         System.out.println(name +" is sleeping");
+    }
+
+    public void setInfo(String name,int age,char gender){  // only sets name, Age, Gender
+        this.name=name;
+        this.age=age;
+        this.gender=gender;
     }
 
 
