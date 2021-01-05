@@ -14,6 +14,10 @@ public class Cube extends Shape implements Volume {
         volume = calculateVolume();
     }
 
+    public Cube() {
+
+    }
+
     @Override
     public double calculateArea() {
         return Math.pow(side, 2) * 6; // side * side * 6
