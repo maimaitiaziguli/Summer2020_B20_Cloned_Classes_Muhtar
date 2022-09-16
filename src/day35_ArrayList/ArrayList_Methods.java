@@ -33,7 +33,7 @@ public class ArrayList_Methods {
             list.add(4);  //3
             list.add(5); // 4
 
-         list.remove(2);  //[1, 2, 4, 5]
+         list.remove(1);  //[1, 2, 4, 5]
             //list.remove(4);
             list.remove(3); // [1, 2, 4]
 

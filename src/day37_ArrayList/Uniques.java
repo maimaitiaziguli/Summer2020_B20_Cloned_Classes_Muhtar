@@ -7,6 +7,8 @@ import java.util.Collections;
 public class Uniques {
 
     public static void main(String[] args) {
+
+
         String str = "AAABCCCCDF";
         String uniques = "";
 
@@ -23,6 +25,8 @@ public class Uniques {
 
 
         System.out.println(uniques);
+
+
 
 
 

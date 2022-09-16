@@ -6,6 +6,7 @@ public class DoWhile {
 
         boolean result = false;
 
+
         while(result){
             System.out.println("Hello World");
         }
@@ -17,6 +18,8 @@ public class DoWhile {
             System.out.println("Hello World");
 
         }while(result);
+            System.out.println("test");
+
 
 
 

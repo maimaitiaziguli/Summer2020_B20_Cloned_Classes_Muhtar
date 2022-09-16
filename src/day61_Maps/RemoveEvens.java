@@ -12,9 +12,20 @@ public class RemoveEvens {
 
         Set<Integer> set = new LinkedHashSet<>();
         set.addAll(  Arrays.asList(num) );
-
         System.out.println(set);
 
+
+        Iterator<Integer> it = set.iterator();
+
+        while(it.hasNext()){
+            if (it.next()%2 == 0){
+                it .remove();
+            }
+        }
+        System.out.println(set);
+
+
+/*
         Iterator<Integer> it = set.iterator();
 
         while(it.hasNext()){
@@ -23,6 +34,8 @@ public class RemoveEvens {
             }
         }
 
+
+ */
         System.out.println(set);
 
 

@@ -20,15 +20,17 @@ package day21_Loops;
 
  */
 
+import java.util.Scanner;
+
 public class DivideTwoNumbers {
 
     public static void main(String[] args) {
-        int a = 20; //2
+        int a = 5; //2
         int b = 3;
 
         if(b == 0){
             System.out.println("Invalid Input");
-            System.exit(0); // forcefully teminating the program
+            System.exit(0); // forcefully terminating the program
         }
 
 
@@ -41,7 +43,31 @@ public class DivideTwoNumbers {
 
         System.out.println(count+" with a remainder of "+a);
 
+
+
+
+        System.out.println("=============");
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        int num1 = input.nextInt();
+        System.out.println("Enter the second number: ");
+        int num2 = input.nextInt();
+
+        int count2 = 0;
+        if (num2 == 0 || num2 > num1 || num1 == 0){
+            System.out.println("Invalid Entry");
+            System.exit(0);
+        }
+        while(num1>= num2){
+            num1 -= num2;
+            count2++;
+        }
+        System.out.println(count2 +" with remainder of  " + num1);
     }
+
+
+
 
 
 

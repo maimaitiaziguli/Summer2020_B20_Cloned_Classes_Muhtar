@@ -42,7 +42,7 @@ public class Cat {
 
         public String toString(){ //will be executed automatically when the cat object is passed in the print statement
             return "Name: "+name+", Breed: "+breed+", Gender: "+gender+", Age: "+age+", Color: "+color+" |";
-        }
+       }
 
 
 }

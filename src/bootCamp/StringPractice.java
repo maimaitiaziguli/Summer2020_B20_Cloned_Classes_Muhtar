@@ -18,7 +18,5 @@ public class StringPractice {
         sBuffer.append("is the best");
 
 
-
-
     }
 }

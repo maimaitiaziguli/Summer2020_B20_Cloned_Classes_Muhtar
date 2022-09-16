@@ -53,18 +53,7 @@ public class MultiCatchBlock {
         }
 
         System.out.println("=====================================================");
-        try {
-            System.out.println(8 / 0); // Arithmetic exception
-            System.out.println("Try Block");
-        }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Catch Block");
 
-        }finally {
-            System.out.println("Finally block");
-        }
-
-
-        System.out.println("Completed");
 
 
 

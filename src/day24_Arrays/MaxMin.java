@@ -21,6 +21,7 @@ public class MaxMin {
             //i: 0, 1, 2
         }
 
+
         int max = arr[0];
         int min = arr[0];
 

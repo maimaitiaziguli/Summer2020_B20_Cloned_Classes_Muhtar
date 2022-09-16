@@ -1,21 +1,29 @@
 package Office_Hours.Practice_07_14_2020;
 
 public class Notes {
-    /*
-    07/14/2020
-Practice Topic: String & loop
+    public static void main(String[] args) {
 
-package name: Practice_07_14_2020
+        System.out.println("hi");
+        String str = "cat cat   catcatcat";
+        int count = 0;
+        while (str.contains("cat")){
+            count++;
+            str = str.replaceFirst("cat", "");
+        }
+        System.out.println(count);
+        System.out.println(str);
 
-Tasks:
-	finding the uniques
+/*
+        String str = "catcat cat";
+        int count = 0;  // counts the frequency
+        while (str.contains("cat")) {
+            count++;
+            str.replaceFirst("cat", "");
+        }
+        System.out.println(count);
 
-	unique: frequency is 1
+ */
 
 
-
-
-next office hour:
-	finding the frequency of the word from a string
-     */
+    }
 }

@@ -19,15 +19,28 @@ public class IteratingKeysValues {
             students.put("John", LocalDate.of(1999, 3, 4));
 
         System.out.println(students);
+        System.out.println("====================================================");
 
-    // applying loops to the keys
+        System.out.println(students.keySet());
+        System.out.println("======================================================");
+
+        System.out.println(students.values());
+        System.out.println("======================================================");
+
+        System.out.println(students.containsValue(LocalDate.of(1983,07,14)));
+        System.out.println("===================================================================");
+
+
+
+        // applying loops to the keys
         for( String each  :  students.keySet()){
             System.out.println(each);
         }
 
         System.out.println("========================================");
-    // applying loops to the values
 
+
+    // applying loops to the values
         for(LocalDate each : students.values() ){
             System.out.println(each);
         }

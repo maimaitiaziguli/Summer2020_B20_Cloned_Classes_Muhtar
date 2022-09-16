@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class FrequencyOfChars {
 
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String str = scan.next();
-
         String nonDup = "";  //"BCD"
                 // ab
 
-        for(int i =0; i <= str.length()-1; i++){  // remove duplciates from str and added to nonDup
+        for(int i = 0; i <= str.length()-1; i++){  // remove duplicates from str and added to nonDup
             String ch = ""+ str.charAt(i);   // B, B, C, C, D, D
 
             if(nonDup.contains(ch)){
@@ -19,8 +19,8 @@ public class FrequencyOfChars {
             }else{
                 nonDup += ch;
             }
-
         }
+
 
          String expectedResult = "";    //"B2C2D2"
 

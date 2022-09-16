@@ -17,7 +17,7 @@ public class Zoo {
         Animal animal1 = new Dog("Grizzly",4,'M');
         animal1.sleep();
         animal1.eat();
-       // animal1.bark();
+      // animal1.bark();
 
        // System.out.println(animal1.dogName);
         System.out.println(animal1.age);

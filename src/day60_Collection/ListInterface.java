@@ -58,9 +58,10 @@ public class ListInterface {
         System.out.println(list5);
 
         int lastObject = list5.pop();
+        System.out.println("the pop :"+ lastObject);
 
-        System.out.println(list5);
-
+        System.out.println(list5.pop());
+        System.out.println("=================");
         int lastObject2 = list5.pop();
 
         System.out.println(list5);
@@ -72,21 +73,32 @@ public class ListInterface {
 
         System.out.println(list5);
 
-        System.out.println("====================================================");
+        System.out.println("===============++++++++++++++====================");
 
         int[] arr1 = {1,2,3,4};
-        int[][] arr2 = { {1,2,3,4}, {5,6,7,8,9} }; // multidimensional
+        System.out.println(Arrays.toString(arr1));
 
+        int[][] arr2 = { {1,2,3,4}, {5,6,7,8,9} }; // multidimensional
+        for (int[] each :arr2){
+            for (int eachOb:each){
+                System.out.print(eachOb);
+            }
+        }
+        System.out.println();
+        System.out.println("++++++++++++++++++++++++++++++++++++++++");
         ArrayList<String> l1 = new ArrayList<>();
         l1.add("A");
+        l1.addAll(Arrays.asList("A","B","C"));
+        System.out.println(l1);
 
-
+        System.out.println("============== List Of Lists ==============================");
         ArrayList<ArrayList<Integer>>  l2 = new ArrayList<>();  // list of lists
              //   l2.add("M");
              //   l2.add(5);
 
             l2.add(  new ArrayList<>( Arrays.asList(1,2,3,4))    );
             l2.add( new ArrayList<>( ) );
+        System.out.println(l2);
 
             l2.get(1).addAll( Arrays.asList(5,6,7,8,9) );
 

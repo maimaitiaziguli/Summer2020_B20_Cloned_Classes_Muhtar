@@ -23,7 +23,7 @@ public class Employee {
     public void getEmployeeInfo(){
         System.out.println("Name: "+name+", Gender: "+gender+", JobTitle: "+jobTitle+", Salary: "+salary);
         SSN = SSN.substring( SSN.length()-4 );
-        System.out.println("Last for digits of SSN: " +  SSN );
+        System.out.println("Last four digits of SSN: " +  SSN );
 
     }
 

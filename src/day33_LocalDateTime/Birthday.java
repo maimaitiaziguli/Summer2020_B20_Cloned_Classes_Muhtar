@@ -6,14 +6,14 @@ public class Birthday {
 
     public static void main(String[] args) {
 
-        HappyBirthDay(1990, 7, 26);
+        HappyBirthDay(2021, 1, 6);
 
     }
 
 
 
     public static void HappyBirthDay(int year, int month, int day){
-        LocalDate birthday = LocalDate.of(year, month, day);
+       // LocalDate birthday = LocalDate.of(year, month, day);
         LocalDate today = LocalDate.now();
 
         int month2 = today.getMonthValue();

@@ -1,6 +1,7 @@
 package day41_toString_Practice;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CatObjects {
 
@@ -8,7 +9,8 @@ public class CatObjects {
         Cat cat1 = new Cat();
         cat1.setCatInfo("Cass", 2, 'F', "Black", "Persian");
 
-        System.out.println( cat1 );
+        System.out.println(cat1  );
+         cat1.drink("cola");
 
         System.out.println("======================================");
 

@@ -19,7 +19,7 @@ public class Constructor {
     }
 
     public Constructor(int a, int b){
-        System.out.println("two int arguments");
+        System.out.println("two int arguments: ");
     }
 
     public static void main(String[] args) {

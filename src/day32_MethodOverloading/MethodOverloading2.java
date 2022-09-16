@@ -43,12 +43,14 @@ public class MethodOverloading2 {
 
     //=============================================
 
-    public static void addition(double a, double b){
+    public static double addition(double a, double b){
         System.out.println(a+b);
+        return (a+ b);
     }
 
-    public static void addition(double a, double b, double c){
+    public static double addition(double a, double b, double c){
         System.out.println(a+b+c);
+        return addition(a,b);
     }
 
     public static void addition(double a, double b, double c, double d){

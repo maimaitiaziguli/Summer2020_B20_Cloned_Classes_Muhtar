@@ -13,10 +13,12 @@ import java.util.Scanner;
 public class OccurancesOfChar {
 
     public static void main(String[] args) {
+
+
         Scanner scan = new Scanner(System.in);
 
         String str = scan.nextLine();
-        char ch = scan.next().charAt(0);
+        char ch = scan.next() .charAt(0);
 
         int count = 0 ; // 1+1 = 2, frequency of ch in str
 

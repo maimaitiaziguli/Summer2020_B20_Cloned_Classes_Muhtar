@@ -15,6 +15,8 @@ package day28_Recap;
                 3 2 1
  */
 
+import Library.Util;
+
 import java.util.Arrays;
 
 public class MultiD_Array_Practice2 {
@@ -70,6 +72,14 @@ public class MultiD_Array_Practice2 {
             System.out.println();
         }
 
+        Util.removeDup("aabbccd");
+        System.out.println(Util.removeDup("aabbccd"));
+
+        System.out.println(Util.frequency("aabbccd",'a'));;
+        int[]arr1 = {1,2,3};
+        int[]arr2 = {4,5,6};
+        Util.combine2Arrays(arr1,arr2);
+        System.out.println(Arrays.toString(Util.combine2Arrays(arr1,arr2)));
 
     }
 }

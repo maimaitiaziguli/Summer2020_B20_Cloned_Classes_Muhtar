@@ -20,6 +20,7 @@ WarmUp tasks:
 
 public class BankAccount {
 
+
     public String firstName;
     public String lastName;
 
@@ -96,5 +97,6 @@ public class BankAccount {
                 "\n==================================================="+
                 "\nBalance: $"+getBalance();
     }
+
 
 }

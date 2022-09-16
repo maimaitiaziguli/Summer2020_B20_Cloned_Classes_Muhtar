@@ -14,7 +14,7 @@ public class DoWhile_Practice {
 
         System.out.println();
 
-        System.out.println(num);
+        System.out.println(num+"hw");
 
         System.out.println("===========================================");
 

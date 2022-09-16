@@ -7,7 +7,7 @@ public class Test extends AccessModifiers{
         System.out.println(publicData);
         System.out.println(Test.protectedData);
         System.out.println(Test.defaultData);
-     // System.out.println(Test.privateData);
+      //System.out.println(Test.privateData);
 
     }
 

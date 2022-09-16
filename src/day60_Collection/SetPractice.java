@@ -6,21 +6,25 @@ public class SetPractice {
 // write aprogram that can remove duplicates from string
 
     public static void main(String[] args) {
-        String str = "ddddddddcccccccbbbbbbbbaaaaaaaaa"; // dcba
+        System.out.println("====== converting a string to an Array of string ====");
+        String str = "zhdxbbaacczh"; // zhdxbac
 
         String[] arr = str.split("");
 
         System.out.println(Arrays.toString(arr)  ); //
 
         //
+        System.out.println("===============end================");
 
-        Set<String> s1 = new LinkedHashSet<>();
-        s1.addAll( Arrays.asList(arr) );
 
-        System.out.println(s1);
+        System.out.println("======= removing the duplicates ======");
+        Set<String> lhs = new LinkedHashSet<>();
+        lhs.addAll( Arrays.asList(arr) );
+        System.out.println(lhs);
+        System.out.println(Arrays.toString(arr));
+        System.out.println("============end===========");
 
-        System.out.println("=========================");
-
+/*
         String str2 = "ttttyyyyyuuuuuuuiiiiiiaaaaaaaaa";
 
         str2 = new LinkedHashSet<>( Arrays.asList(str2.split(""))).toString() ;
@@ -31,19 +35,23 @@ public class SetPractice {
 
         System.out.println(str2);
 
-        System.out.println("========================================================");
-        String a1 = "abcabc";   // a b c
-        String a2 = "cabbbc";   // a b c
+ */
 
-        HashSet<String> b1 = new HashSet<>();
-        b1.addAll(  Arrays.asList( a1.split("")  ) );
-        System.out.println(b1);
+        System.out.println("======================HashSet==========================");
+        //String a1 = "abcabc";   // a b c
+       // String a2 = "cabbbc";   // a b c
 
+        HashSet<String> hs = new HashSet<>();
+        hs.addAll(  Arrays.asList( str.split("")  ) );
+        System.out.println(hs);
+        System.out.println("====== end ======");
+
+        /*
         HashSet<String> b2 = new HashSet<>();
         b2.addAll( Arrays.asList( a2.split("")) );
         System.out.println(b2);
 
-        a1 = b1.toString();
+        a1 = hs.toString();
         a2 = b2.toString();
 
         System.out.println( a1.equals(a2));
@@ -83,7 +91,34 @@ public class SetPractice {
 
         System.out.println( Arrays.toString(numbers));
 
+         */
 
+        System.out.println("===================TreeSet ======================");
+        Set<String> ts = new TreeSet<>();
+        ts.addAll(Arrays.asList(str.split("")));
+        System.out.println(ts);
+        System.out.println("============= end ===============");
+
+        System.out.println("================== convert to string =============");
+        String tsStr = ts.toString();
+        String lhsStr = lhs.toString();
+        String hsStr = hs.toString();
+
+        String tsStr1 = tsStr.replace("[","").replace(",","").replace("]","");
+        System.out.println(tsStr1);
+
+        String lhsStr1 = lhsStr.replace("[","").replace(",","").replace("]","");
+        System.out.println(lhsStr1);
+
+         String hsStr1 = hsStr.replace("[","").replace(",","").replace("]","");
+        System.out.println(hsStr1);
+
+
+
+
+
+
+        //System.out.println("String "+st.replace("[","").replace(",","").replace("]",""));
 
 
 
